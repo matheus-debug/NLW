@@ -7,7 +7,7 @@
 
 #container {
   margin: auto;
-  width: 90%;
+  width: min(90%, 112rem);
 }
 .location,
 h1,
@@ -52,4 +52,53 @@ main h1 {
 }
 .visit a {
   animation-delay: 250ms;
+}
+
+/*DESKTOP VERSION*/
+
+@media (min-width: 760px) {
+  #container {
+    background: url("../images/bg.svg") no-repeat 80% /
+      clamp(30rem, 54vh, 56rem);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+  .location,
+  h1,
+  .visit p {
+    height: initial;
+    text-align: initial;
+  }
+  .location {
+    text-align: right;
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: clamp(4rem, 8vw, 8.4rem);
+    font-weight: bold;
+    line-height: 0.88;
+    margin: clamp(10%, 9vh, 12%) 0 4rem;
+    width: min(300px, 80%);
+  }
+
+  .visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .visit p {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    width: clamp(20rem, 20vw, 30rem);
+  }
+
+  .visit a {
+    margin: initial;
+  }
 }
