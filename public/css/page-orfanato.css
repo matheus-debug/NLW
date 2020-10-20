@@ -45,6 +45,7 @@ a.create-orfanato {
     display: flex;
     justify-content: center ;
     align-items: center; 
+    transition:  background-color 200ms;
 }
 
 a.create-orfanato:hover {
