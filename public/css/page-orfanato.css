@@ -61,7 +61,6 @@ a.create-orfanato:hover {
 }
 .leaflet-popup-content {
     color: #0089a5;
-    font-size: 2rem;
     font-weight: 600;
     margin: .8rem 1.2rem;
     display: flex;
@@ -69,12 +68,11 @@ a.create-orfanato:hover {
     justify-content: space-between;
 }
 
-.leaflet-popup-content a {
+.leaflet-popup-content a { 
     width: 4rem;
     height: 4rem;
-    box-shadow: 17.2868px 27.65px 41.48px rgba(13, 192, 236, 0.16) ;
+    box-shadow: 17.2868px 27.65px 41.48px rgba(23, 142, 166, 0.16) ;
     border-radius: 20px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,4 +81,12 @@ a.create-orfanato:hover {
 
 .leaflet-popup-content a:hover {
     background: #17d6eb;
+}
+
+.leaflet-popup-tip {
+    display: none;
+
+}
+.leaflet-container {
+    font: 600 2rem/1 'Nunito', sans-serif;
 }
