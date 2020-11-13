@@ -35,6 +35,11 @@ aside.sidebar footer button:hover {
   padding-left: 114px;
 }
 
+main {
+  flex: 1;
+
+}
+
 /*DETALHES*/
 
 .orfanato-detalhes {
