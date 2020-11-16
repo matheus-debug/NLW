@@ -19,9 +19,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="public/images/logo-icon.png" />
     <link rel="stylesheet" href="public/css/animation.css" />
-    <link rel="stylesheet" href="public/css/criar-orfanato.css" />
+    <link rel="stylesheet" href="public/css/criar-orfanato.css"/>
     <link rel="stylesheet" href="public/css/main.css" />
     <link rel="stylesheet" href="public/css/sidebar.css">
+    <link rel="stylesheet" href="public/css/map.css">
+
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
@@ -41,8 +43,28 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-        <form action=" ">
+        <form action="">
+          <fieldset>
+            <legend>Dados</legend>
 
+            <div class="map-container">
+              <div class="mapid">
+                <footer>
+                  <a href="" id="select-point">
+                    Clique no mapa para adiconar a localização
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="input-block">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="name">
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Visitação</legend>
+          </fieldset>
         </form>
       </main>
     </div>
