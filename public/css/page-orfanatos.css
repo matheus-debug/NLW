@@ -12,7 +12,7 @@ aside {
   justify-content: space-between;
 }
 
-aside h2 {
+aside h2 { 
   margin-top: 2.4rem;
   font: 800 clamp(2rem, 5vw, 3.6rem) / 1.1 "Nunito", "sans-serif";
 }
