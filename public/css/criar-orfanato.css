@@ -5,6 +5,21 @@
 main{
     flex: 1;
 }
+
+/*mapa*/
+
+.map-container {
+    margin:  0 0 4rem;
+}
+.map-container .leaflet-container {
+    border-radius: 20px 20px 0 0 ;
+
+}
+
+.map-container footer {
+    background-color: #f5f8fa;
+    border-radius: 0 0 20px 20px ;
+}
 form{
     width: 70rem;
     margin: 6.4rem;
@@ -13,20 +28,4 @@ form{
     border-radius: 2rem;
     overflow: hidden;
     padding: 8rem;
-}
-
-fieldset {
-    border: 0;
-    
-}
-
-fieldset legend {
-    width: 100%;
-    font-size: 3.2rem;
-    line-height: 1.5;
-    color: #5c8599;
-    font-weight: 700;
-    border-bottom: 1px solid #d3e2e5;
-    margin-bottom: 4rem;
-    padding-bottom: 2.4rem ;
 }

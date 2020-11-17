@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="public/css/main.css" />
     <link rel="stylesheet" href="public/css/sidebar.css">
     <link rel="stylesheet" href="public/css/map.css">
+    <link rel="stylesheet" href="public/css/form.css">
 
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
@@ -48,18 +49,34 @@
             <legend>Dados</legend>
 
             <div class="map-container">
-              <div class="mapid">
-                <footer>
-                  <a href="" id="select-point">
-                    Clique no mapa para adiconar a localização
-                  </a>
-                </footer>
+
+              
+              <div id="mapid">
+                
               </div>
+
+              <footer>
+                <a href="" id="select-point">
+                  Clique no mapa para adiconar a localização
+                </a>
+              </footer>
+
             </div>
             <div class="input-block">
               <label for="nome">Nome</label>
               <input type="text" id="nome" name="name">
             </div>
+
+            <div class="input-block">
+              <label for="sobre">Sobre<span> Máximo 300 caracteres</span></label>
+              <textarea id="sobre" name="about"></textarea>
+            </div>
+
+            <div class="input-block">
+              <label for="whatsapp">Whatsapp</label>
+              <input type="text" id="whatsapp" name="whatsapp">
+            </div>
+
           </fieldset>
           
           <fieldset>
