@@ -1,31 +1,21 @@
-.criar-orfanato {
-    display: flex;
-    min-height: 100vh;
+#criar-orfanato {
+  display: flex;
+  min-height: 100vh;
 }
-main{
-    flex: 1;
+main {
+  flex: 1;
 }
 
 /*mapa*/
 
 .map-container {
-    margin:  0 0 4rem;
+  margin: 0 0 4rem;
 }
-.map-container .leaflet-container {
-    border-radius: 20px 20px 0 0 ;
-
+.map-container.leaflet-container {
+  border-radius: 20px 20px 0 0;
 }
 
 .map-container footer {
-    background-color: #f5f8fa;
-    border-radius: 0 0 20px 20px ;
-}
-form{
-    width: 70rem;
-    margin: 6.4rem;
-    background: white;
-    border: 1x solid #d3e2e5;
-    border-radius: 2rem;
-    overflow: hidden;
-    padding: 8rem;
+  background-color: #f5f8fa;
+  border-radius: 0 0 20px 20px;
 }
