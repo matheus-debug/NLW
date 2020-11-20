@@ -52,6 +52,8 @@
 
             <div class="map-container">
               <div id="mapid"></div>
+              <input type="hidden" name="lat">
+              <input type="hidden" name="lng">
 
               <footer>
                 <a href="" id="select-point">
@@ -61,19 +63,19 @@
             </div>
             <div class="input-block">
               <label for="nome">Nome</label>
-              <input type="text" id="nome" name="name" />
+              <input type="text" id="nome" name="name"  required/>
             </div>
 
             <div class="input-block">
               <label for="sobre"
                 >Sobre<span> Máximo 300 caracteres</span></label
               >
-              <textarea id="sobre" name="about"></textarea>
+              <textarea id="sobre" name="about" required></textarea>
             </div>
 
             <div class="input-block">
               <label for="whatsapp">Whatsapp</label>
-              <input type="text" id="whatsapp" name="whatsapp" />
+              <input type="text" id="whatsapp" name="whatsapp" required />
             </div>
 
             <div class="input-block images">
@@ -81,7 +83,7 @@
 
               <div class="images-upload" id="images">
                 <div class="new-upload">
-                  <input name="images" placeholder="Cole o link da foto aqui" />
+                  <input name="images" placeholder="Cole o link da foto aqui"  required/>
                   <span
                     ><img
                       src="public/images/remove-file.svg"
@@ -101,12 +103,12 @@
 
             <div class="input-block">
               <label for="instructions">Instruções</label>
-              <textarea name="instructions" id="instructions"></textarea>
+              <textarea name="instructions" id="instructions" required></textarea>
             </div>
 
             <div class="input-block">
               <label for="opening-hours">Horário das Visitas</label>
-              <input type="text" id="opening-hours" name="opening-hours" />
+              <input type="text" id="opening-hours" name="opening-hours" required/>
             </div>
 
             <div class="input-block">
@@ -116,7 +118,7 @@
                   type="hidden"
                   id="open-on-weekends"
                   name="open-on-weekends"
-                  value="1"
+                  value="1" required
                 />
 
                 <div class="button-select">
