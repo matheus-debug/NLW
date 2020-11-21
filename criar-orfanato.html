@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="public/css/buttons.css" />
     <link rel="stylesheet" href="public/css/criar-orfanato.css" />
 
-
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
@@ -52,8 +51,8 @@
 
             <div class="map-container">
               <div id="mapid"></div>
-              <input type="hidden" name="lat">
-              <input type="hidden" name="lng">
+              <input type="hidden" name="lat" />
+              <input type="hidden" name="lng" />
 
               <footer>
                 <a href="" id="select-point">
@@ -63,7 +62,7 @@
             </div>
             <div class="input-block">
               <label for="nome">Nome</label>
-              <input type="text" id="nome" name="name"  required/>
+              <input type="text" id="nome" name="name" required />
             </div>
 
             <div class="input-block">
@@ -83,8 +82,12 @@
 
               <div class="images-upload" id="images">
                 <div class="new-upload">
-                  <input name="images" placeholder="Cole o link da foto aqui"  required/>
-                  <span
+                  <input
+                    name="images"
+                    placeholder="Cole o link da foto aqui"
+                    required
+                  />
+                  <span onclick="deleteField(event)"
                     ><img
                       src="public/images/remove-file.svg"
                       alt="Remover Foto"
@@ -92,7 +95,7 @@
                 </div>
               </div>
 
-              <button type="button">
+              <button type="button" onclick="addPhotoField()">
                 <img src="public/images/add-file.svg" alt="Nova Imagem" />
               </button>
             </div>
@@ -103,12 +106,21 @@
 
             <div class="input-block">
               <label for="instructions">Instruções</label>
-              <textarea name="instructions" id="instructions" required></textarea>
+              <textarea
+                name="instructions"
+                id="instructions"
+                required
+              ></textarea>
             </div>
 
             <div class="input-block">
               <label for="opening-hours">Horário das Visitas</label>
-              <input type="text" id="opening-hours" name="opening-hours" required/>
+              <input
+                type="text"
+                id="opening-hours"
+                name="opening-hours"
+                required
+              />
             </div>
 
             <div class="input-block">
@@ -118,7 +130,8 @@
                   type="hidden"
                   id="open-on-weekends"
                   name="open-on-weekends"
-                  value="1" required
+                  value="1"
+                  required
                 />
 
                 <div class="button-select">
