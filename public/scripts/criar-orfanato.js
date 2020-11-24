@@ -34,40 +34,59 @@ map.on("click", (event) => {
 
 //adicionar campo de fotos
 function addPhotoField() {
-    //pega o container de imagens
-    const container = document.querySelector('#images')
+  //pega o container de imagens
+  const container = document.querySelector("#images");
 
-    //duplica o container fotos - new image
-    const fieldsContainer = document.querySelectorAll('.new-upload')
+  //duplica o container fotos - new image
+  const fieldsContainer = document.querySelectorAll(".new-upload");
 
-    //realizar o clone da ultima imagem adicionada
-    const newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true)
+  //realizar o clone da ultima imagem adicionada
+  const newFieldContainer = fieldsContainer[
+    fieldsContainer.length - 1
+  ].cloneNode(true);
 
-    //Verificar se o campo esta vazio, não adicionar o campo vazio
-    const input =  newFieldContainer.children[0]
-    if(input.value == "") {
-        
-        alert("Primeiro adicione uma Foto");
-        return
-    }
-    //limpar o clone antes de adicionar ao container de imagens
-    newFieldContainer.children[0].value = ""
-    //adicionar o clone ao container de imagens
-    container.appendChild(newFieldContainer)
+  //Verificar se o campo esta vazio, não adicionar o campo vazio
+  const input = newFieldContainer.children[0];
+  if (input.value == "") {
+    alert("Primeiro adicione uma Foto");
+    return;
+  }
+  //limpar o clone antes de adicionar ao container de imagens
+  newFieldContainer.children[0].value = "";
+  //adicionar o clone ao container de imagens
+  container.appendChild(newFieldContainer);
 }
 
-
 function deleteField(event) {
-    const span = event.currentTarget
-    const fieldsContainer = document.querySelectorAll('.new-upload')
+  const span = event.currentTarget;
+  const fieldsContainer = document.querySelectorAll(".new-upload");
 
-    if(fieldsContainer.length <= 1){
-        //limpar o valor do campo
-        span.parentNode.children[0].value = ""
-        return
-    }
+  if (fieldsContainer.length <= 1) {
+    //limpar o valor do campo
+    span.parentNode.children[0].value = "";
+    return;
+  }
 
-    //deletar o campo
+  //deletar o campo
 
-    span.parentNode.remove();
+  span.parentNode.remove();
+}
+
+//selecionar o botão sim e não no fim da pagina
+
+function toggleSelect(event) {
+  //retirar a class active
+  document.querySelectorAll(".button-select button").forEach(function (button) {
+    button.classList.remove("active");
+  });
+  //adionar a classe active
+  const button = event.currentTarget;
+  button.classList.add("active");
+
+  //atualizar input hidden
+  const input = document.querySelector('[name="open-on-weekends"]');
+
+  //verificar se o valor é sim ou não
+
+  input.value = button.dataset.value;
 }
